@@ -16,13 +16,13 @@
 </head>
 <body>
     <!-- Navbar Start-->
-    <nav id="navbar" class="w-full absolute top-0 left-0 px-6 py-5 text-white z-25 transition-all duration-500 sm:px-16 lg:px-18 lg:py-5 font-jakarta">
+    <nav id="navbar" class="w-full absolute top-0 left-0 px-6 py-4 text-white z-25 transition-all duration-500 sm:px-16 lg:px-18 lg:py-5 font-jakarta bg-linear-90/oklch from-darkPurple/50 to-purple/50 backdrop-blur-lg">
         <div class="flex justify-between items-center selection:bg-white selection:text-purple">
-            <a href="#home" class="font-semibold text-2xl md:text-3xl lg:text-4xl transition-all duration-500 flex items-center gap-6 md:gap-9">
-                <span class="w-[59px] h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex items-center custom-shadow">
+            <a href="#home" class="font-semibold text-2xl md:text-3xl lg:text-4xl transition-all duration-500 flex items-center gap-4 sm:gap-6 md:gap-9">
+                <span class="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] md:w-[59px] md:h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex items-center custom-shadow">
                     <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin" />
                 </span>
-                <span class="bg-gradient-to-r from-blueTextLogo to-purpleTextLogo bg-clip-text text-transparent font-extrabold text-3xl text-logo-shadow inner-text">HGTC</span>
+                <span class="bg-gradient-to-r from-blueTextLogo to-purpleTextLogo bg-clip-text text-transparent font-extrabold text-2xl sm:text-3xl text-logo-shadow inner-text">HGTC</span>
             </a>
             <div>
                 <!-- ICON BAR -->
@@ -37,7 +37,7 @@
                 <!-- ICON BAR -->
     
                 <div 
-                    class="hidden absolute top-[98px] right-0 left-0 py-3 bg-white bg-opacity-90 shadow-lg z-20 lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none" 
+                    class="hidden absolute top-[78px] right-0 left-0 py-3 bg-white bg-opacity-90 shadow-lg z-20 lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none transition-all duration-500 ease-in-out" 
                     id="nav-menu">
                     <ul class="block lg:flex lg:gap-[70px] font-jakarta text-center">
                         <li>
@@ -96,18 +96,19 @@
     <!-- Navbar End-->
         
     <!-- START HERO SECTION -->
-    <section id="landing-page" class="text-center h-full w-full pt-32 bg-linear-45/oklch from-purpleHero to-darkPurple relative transition-all duration-500">
-        <div class="flex justify-center items-center">
-            <div class="absolute top-20 left-40 w-[1px] h-[1px] rounded-full bg-transparent shadow-purple-glow"></div>
+    <section id="landing-page" class="text-center h-full w-full pt-32 bg-linear-45/oklch from-purpleHero to-darkPurple relative transition-all duration-500 selection:bg-purple selection:text-white">
+        <div class="w-full flex items-start justify-start md:justify-center md:items-center">
+            <div class="absolute top-20 left-40 hidden md:block w-[1px] h-[1px] rounded-full bg-transparent shadow-purple-glow"></div>
+            <div class="absolute top-20 left-20 md:hidden w-[1px] h-[1px] rounded-full bg-transparent shadow-purple-glow-mob"></div>
             <!-- bintang kiri -->
-            <img id="left-stars" data-base-top="128" class="absolute top-32 left-36 z-0" src="assets/images/icons/Stars.svg" alt="bintang">
+            <img id="left-stars" data-base-top="128" class="absolute w-[60px] sm:w-[70px] lg:w-[82px] xl:w-[96px] top-23 sm:top-28 md:top-32 left-10 sm:left-20 lg:left-36 z-0 select-none" src="assets/images/icons/Stars.svg" alt="bintang">
             <!-- bintang kanan -->
-            <div id="right-stars" data-base-top="400"  class="absolute top-100 right-42 z-3">
+            <div id="right-stars" data-base-top="400" class="absolute w-[60px] sm:w-[70px] lg:w-[82px] xl:w-[96px] top-60 sm:top-70 md:top-80 lg:top-100 right-7 md:right-15 lg:right-42 z-3">
                 <img src="assets/images/icons/Stars.svg" alt="bintang">
             </div>
             <div class="">
-                <h1 class="relative font-jakarta font-bold text-8xl pt-14 bg-gradient-to-r from-blueTextLogo to-purpleTextLogo pb-5 bg-clip-text text-transparent md:max-w-[750px] text-center text-logo-shadow z-3">HIMTIKA Goes To Company</h1>
-                <button class="button flex items-center gap-2 px-6 py-3 border-none origin-center relative cursor-pointer mt-12 bg-[#9747FF] mx-auto z-5">
+                <h1 class="relative font-jakarta font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl pt-3 md:pt-12 xl:pt-14 bg-gradient-to-r from-blueTextLogo to-purpleTextLogo pb-5 bg-clip-text text-transparent md:max-w-[750px] text-center text-logo-shadow z-3">HIMTIKA Goes To Company</h1>
+                <button class="button flex items-center gap-2 px-6 py-3 border-none origin-center relative cursor-pointer mt-5 xl:mt-12 bg-[#9747FF] mx-auto z-5">
                     <div class="dots_border"></div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -145,17 +146,17 @@
             </div>
         </div>
         <!-- bagian gedung dan awan -->
-        <div class="-mt-32 w-full relative">
+        <div class="-mt-34 md:-mt-30 lg:-mt-32 mx-auto w-full relative">
             <!-- Awan Kiri -->
-            <div id="left-cloud" class="absolute top-12 left-5 z-2">
+            <div id="left-cloud" class="absolute top-30 sm:top-15 md:top-8 lg:top-5 -left-10 md:left-5 z-2 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[700px] xl:w-[1000px]">
                 <img src="assets/images/objects/left-cloud.png" alt="left-cloud">
             </div>
-            <div id="glow-left-cloud" class="absolute top-70 left-120 w-[1px] h-[1px] rounded-full bg-transparent shadow-glow-cloud z-1"></div>
+            <div id="glow-left-cloud" class="absolute top-50 left-45 sm:left-60 sm:top-43 md:top-30 lg:top-50 md:left-90 lg:left-150 xl:top-70 xl:left-120 w-[1px] h-[1px] rounded-full bg-transparent shadow-glow-cloud z-1"></div>
             <!-- Awan Kanan -->
-            <div id="right-cloud" class="absolute -top-20 right-0 z-2">
-                <img src="assets/images/objects/right-cloud.png" class="w-full shadow-cloud" alt="right-cloud">
+            <div id="right-cloud" class="absolute top-5 sm:-top-5 md:-top-20 -right-70 sm:-right-35 md:right-0 z-2">
+                <img src="assets/images/objects/right-cloud.png" class="w-[50%] sm:w-[75%] md:w-full shadow-cloud" alt="right-cloud">
             </div>
-            <div id="brin-building" class="relative z-4">
+            <div id="brin-building" class="relative z-4 w-[250%] sm:w-[150%] md:w-[120%] -translate-x-75 sm:-translate-x-30 md:-translate-x-20 lg:translate-0 lg:w-full transition-all duration-500">
                 <img src="assets/images/objects/brin.png" class="w-full" alt="Illustration">
             </div>
         </div>
@@ -192,54 +193,56 @@
     <!-- END LIVE SECTION -->
 
     <!-- START ABOUT  -->
-    <section id="about" class="sm:px-16 lg:px-18 lg:py-60 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500">
+    <section id="about" class="px-7 sm:px-16 lg:px-18 py-45 md:py-55 lg:py-60 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500 selection:bg-purple selection:text-white">
         <div class="flex items-center justify-center">
-            <img src="assets/images/objects/blob-left.svg" alt="img" class="absolute top-10 left-0" />
+            <img src="assets/images/objects/blob-left.svg" alt="img" class="absolute top-10 left-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[430px]" />
             <div class="font-jakarta text-center w-5/6">
-                <h1 class="text-[80px] font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent glow-purple">Apa itu HGTC?</h1>
-                <p class="text-3xl font-normal text-white text-justify mt-13">Merupakan kegiatan akademis yang diorganisir oleh HIMTIKA. Kegiatan ini melibatkan kunjungan mahasiswa ke perusahaan dengan tujuan meningkatkan pemahaman mendalam tentang dunia kerja. HGTC menjadi sarana pembelajaran yang efektif, memberikan kesempatan bagi mahasiswa untuk terlibat langsung dalam pengalaman dunia nyata!</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] sm:leading-14 md:leading-18 lg:leading-24 font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent glow-purple">Apa itu HGTC?</h1>
+                <p class="text-lg sm:text-xl md:text-2xl xl:text-3xl leading-6 sm:leading-7 md:leading-8 lg:leading-9 xl:leading-10 font-normal text-white text-center xl:text-justify mt-7 md:mt-10 lg:mt-13">Merupakan kegiatan akademis yang diorganisir oleh HIMTIKA. Kegiatan ini melibatkan kunjungan mahasiswa ke perusahaan dengan tujuan meningkatkan pemahaman mendalam tentang dunia kerja. HGTC menjadi sarana pembelajaran yang efektif, memberikan kesempatan bagi mahasiswa untuk terlibat langsung dalam pengalaman dunia nyata!</p>
             </div>
-            <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute -bottom-8 right-0 z-1" />
+            <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute bottom-15 right-0 md:bottom-10 lg:-bottom-8 lg:right-0 z-1 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[600px]" />
         </div>
     </section>
 
     <section class="pt-12 lg:pt-40 pb-24 px-6 sm:px-16 md:px-12 lg:px-18 transition-all duration-500 selection:bg-purple selection:text-white bg-linear-90/oklch from-darkPurple to-purpleAbout relative">
-        <div class="flex flex-col lg:flex-row w-full lg:gap-5 xl:gap-0">
-            <div class="w-full lg:w-7/12 flex flex-col lg:flex-row items-center font-jakarta">
+        <div class="flex flex-col lg:flex-row items-center w-full lg:gap-5 xl:gap-0">
+            <div class="w-full lg:w-8/12 xl:w-7/12 flex flex-col lg:flex-row items-center font-jakarta">
                 <div>
-                    <h1 class="w-full font-bold text-6xl md:text-[64px] bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent text-center -mb-8 lg:mb-0 lg:text-left transition-all duration-500 leading-15 glow-purple">
-                        Expanding <br />Knowledge, Shaping The Future.
+                    <h1 class="w-full md:w-[80%] lg:w-full mx-auto font-bold text-3xl sm:text-4xl md:text-5xl xl:text-[64px] leading-8 sm:leading-9 py-1 md:py-2 md:leading-11 lg:leading-12 xl:leading-15 bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent text-center -mb-8 lg:mb-0 lg:text-left transition-all duration-500 glow-purple">
+                        Expanding <span class="inline lg:block lg:w-[88%] xl:w-full">Knowledge, Shaping The Future.</span>
                     </h1>
-                    <h2 class="text-5xl mt-5 font-belanosima bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent glow-purple">A Journey Into The Industry!</h2>
-                    <div class="w-full lg:w-5/12 flex items-start md:justify-start xl:justify-end transition-all duration-500 relative lg:hidden">    
-                        <img src="assets/images/objects/brin-docum.png" alt="illustrasion" class="" />
-                        <span class="absolute top-21 right-45 flex justify-center items-center custom-shadow">
-                            <span class="relative ">
-                                <!-- Gambar lingkaran biru sebagai latar -->
-                                <img src="assets/images/icons/blue-circle.svg" alt="blue-circle" class="absolute w-full h-full object-contain" />
-                                <!-- Gambar ikon atom di tengah -->
-                                <img src="assets/images/icons/atom-2.svg" alt="atom" class="atom-spin-2 z-10" />
-                                <img src="assets/images/icons/blured-star-1.png" alt="img" class="absolute -top-9 left-0" />
+                    <h2 class="text-2xl md:text-3xl lg:text-5xl mt-8 sm:mt-10 lg:mt-5 text-center lg:text-left font-belanosima bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent glow-purple">A Journey Into The Industry!</h2>
+                    <div class="w-full lg:w-5/12 mt-8 sm:mt-3 lg:mt-0 mb-10 sm:mb-1 flex items-start md:justify-start xl:justify-end transition-all duration-500 relative lg:hidden">
+                        <div class="relative mx-auto">
+                            <img src="assets/images/objects/brin-docum.png" alt="illustrasion" class="w-[300px] sm:w-[332px] md:w-[400px] mx-auto" />
+                            <span class="absolute top-20 right-10 sm:top-15 sm:right-30 md:top-21 md:right-40 flex justify-center items-center custom-shadow">
+                                <span class="relative">
+                                    <!-- Gambar lingkaran biru sebagai latar -->
+                                    <img src="assets/images/icons/blue-circle.svg" alt="blue-circle" class="absolute w-full h-full object-contain" />
+                                    <!-- Gambar ikon atom di tengah -->
+                                    <img src="assets/images/icons/atom-2.svg" alt="atom" class="atom-spin-2 z-10" />
+                                    <img src="assets/images/icons/blured-star-1.png" alt="img" class="absolute -top-9 left-0" />
+                                </span>
                             </span>
-                        </span>
-                        <span class="absolute bottom-20 right-80 w-[59px] h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex justify-center items-center custom-shadow">
-                            <div class="relative">
-                                <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin" />
-                                <img src="assets/images/icons/blured-star-2.png" alt="img" class="absolute -bottom-3 -left-3" />
-                            </div>
-                        </span>
+                            <span class="absolute bottom-0 left-8 sm:bottom-8 sm:left-8 md:bottom-15 md:left-12 w-[59px] h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex justify-center items-center custom-shadow">
+                                <div class="relative">
+                                    <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin" />
+                                    <img src="assets/images/icons/blured-star-2.png" alt="img" class="absolute -bottom-3 -left-3" />
+                                </div>
+                            </span>
+                        </div>    
                     </div>
-                    <div class="bg-linear-90/oklch from-darkPurple to-darkPurpleAbout rounded-4xl glow-desc-div py-6 px-11 mt-10"> 
-                        <p class="font-light text-2xl text-center text-white leading-7 tracking-wide lg:text-justify">
+                    <div class="bg-linear-90/oklch from-darkPurple to-darkPurpleAbout rounded-4xl glow-desc-div px-5 py-4 lg:py-5 xl:py-6 md:px-11 mt-10 sm:mt-5 md:mt-8"> 
+                        <p class="font-thin md:font-light text-sm sm:text-base lg:text-xl xl:text-2xl text-center text-white leading-4 sm:leading-5 lg:leading-7 tracking-wide lg:text-justify">
                         Setiap langkah dalam perjalanan ini tak hanya memperluas pengetahuan, tetapi juga turut membentuk masa depan yang lebih cemerlang!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-5/12 lg:flex lg:items-start md:justify-start xl:justify-end transition-all duration-500 relative hidden">    
+            <div class="w-full lg:w-4/12 xl:w-5/12 lg:flex lg:items-start md:justify-start xl:justify-end transition-all duration-500 relative hidden">    
                 <img src="assets/images/objects/brin-docum.png" alt="illustrasion" class="" />
-                <span class="absolute top-21 right-45 flex justify-center items-center custom-shadow">
-                    <span class="relative w-[82px] h-[82px] flex justify-center items-center">
+                <span class="absolute lg:top-7 lg:right-20 xl:top-21 xl:right-45 flex justify-center items-center custom-shadow">
+                    <span class="relative lg:w-[70px] lg:h-[70px] xl:w-[82px] xl:h-[82px] flex justify-center items-center">
                         <!-- Gambar lingkaran biru sebagai latar -->
                         <img src="assets/images/icons/blue-circle.svg" alt="blue-circle" class="absolute w-full h-full object-contain" />
                         <!-- Gambar ikon atom di tengah -->
@@ -247,7 +250,7 @@
                         <img src="assets/images/icons/blured-star-1.png" alt="img" class="absolute -top-9 left-0" />
                     </span>
                 </span>
-                <span class="absolute bottom-20 right-80 w-[59px] h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex justify-center items-center custom-shadow">
+                <span class="absolute lg:bottom-8 lg:left-8 xl:bottom-20 xl:right-80 w-[50px] h-[50px] xl:w-[59px] xl:h-[59px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex justify-center items-center custom-shadow">
                     <div class="relative">
                         <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin" />
                         <img src="assets/images/icons/blured-star-2.png" alt="img" class="absolute -bottom-3 -left-3" />
@@ -288,39 +291,39 @@
     <!-- END LIVE SECTION -->
 
     <!-- START STATISTIK PERJALANAN SECTION -->
-    <section class="sm:px-16 lg:px-18 lg:pt-62 lg:pb-52 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500">
+    <section class="px-6 sm:px-16 lg:px-18 pt-35 lg:pt-62 pb-25 sm:pb-35 md:pb-42 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500 selection:bg-purple selection:text-white">
         <div class="flex items-center justify-center">
-            <img src="assets/images/objects/blob-left-stat.svg" alt="img" class="absolute top-8 left-0" />
+            <img src="assets/images/objects/blob-left-stat.svg" alt="img" class="absolute top-8 left-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[460px]" />
             <div class="font-jakarta">
-                <h1 class="text-[64px] font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent text-center glow-purple">Statistik Perjalanan HGTC</h1>
-                <div id="counters" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-11 text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-[64px] font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo md:leading-15 lg:leading-19 xl:leading-20 bg-clip-text text-transparent text-center glow-purple">Statistik Perjalanan HGTC</h1>
+                <div id="counters" class="grid sm:grid-cols-1 md:grid-cols-3 gap-5 mt-11 text-center w-[80%] sm:w-[60%] md:w-full mx-auto transition-all duration-500">
                     <!-- Card 1: Jumlah Peserta -->
                     <div id="card" class="bg-linear-180/oklch from-[#D9D9D9]/30 to-blueLogo/20 rounded-3xl lg:max-w-full font-jakarta p-4">
-                        <div class="h-[140px] flex justify-center items-center mx-auto">
+                        <div class="md:h-[100px] lg:h-[120px] xl:h-[140px] flex justify-center items-center mx-auto w-[120px] lg:w-[130px] xl:w-full">
                             <img src="assets/images/icons/jumlah-peserta.svg" alt="img" />
                         </div>
-                        <h1 class="text-white text-5xl font-bold mt-5 mb-2"><span data-count="60">0</span>+</h1>
-                        <p class="text-white text-xl">Jumlah Peserta Setiap Tahun</p>
+                        <h1 class="text-white text-4xl xl:text-5xl font-bold mt-5 mb-2"><span data-count="60">0</span>+</h1>
+                        <p class="text-white sm:text-lg xl:text-xl">Jumlah Peserta Setiap Tahun</p>
                     </div>
                     <!-- Card 2: Feedback Survei -->
                     <div id="card" class="bg-linear-180/oklch from-[#D9D9D9]/30 to-blueLogo/20 rounded-3xl lg:max-w-full font-jakarta p-4">
-                        <div class="h-[140px] flex justify-center items-end mx-auto">
+                        <div class="md:h-[100px] lg:h-[120px] xl:h-[140px] flex justify-center items-end mx-auto w-[100px] lg:w-[100px] xl:w-full">
                             <img src="assets/images/icons/feedback.svg" alt="img" />
                         </div>
-                        <h2 class="text-white text-5xl font-bold mt-5 mb-2"><span data-count="120">0</span>+</h2>
-                        <p class="text-white text-xl">Feedback Positif dari Survei</p>
+                        <h2 class="text-white text-4xl xl:text-5xl font-bold mt-5 mb-2"><span data-count="120">0</span>+</h2>
+                        <p class="text-white sm:text-lg xl:text-xl">Feedback Positif dari Survei</p>
                     </div>
                     <!-- Card 3: Peserta Puas -->
                     <div id="card" class="bg-linear-180/oklch from-[#D9D9D9]/30 to-blueLogo/20 rounded-3xl lg:max-w-full font-jakarta p-4">
-                        <div class="h-[140px] flex justify-center items-center mx-auto">
+                        <div class="md:h-[100px] lg:h-[120px] xl:h-[140px] flex justify-center items-center mx-auto w-[80px] lg:w-[100px] xl:w-full">
                             <img src="assets/images/icons/merasa-puas.svg" alt="img" />
                         </div>
-                        <h2 class="text-white text-5xl font-bold mt-5 mb-2"><span data-count="90">0</span>%</h2>
-                        <p class="text-white text-xl">Peserta Merasa Puas</p>
+                        <h2 class="text-white text-4xl xl:text-5xl font-bold mt-5 mb-2"><span data-count="90">0</span>%</h2>
+                        <p class="text-white sm:text-lg xl:text-xl">Peserta Merasa Puas</p>
                     </div>
                 </div>
-                <div class="w-3/4 mx-auto">
-                    <p class="text-xl text-white text-center mt-13">Angka-angka ini bukan sekadar data—ini bukti nyata bahwa HGTC terus berkembang dan memberikan dampak positif bagi mahasiswa setiap tahunnya.</p>
+                <div class="w-full lg:w-3/4 mx-auto">
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white text-center mt-8 sm:mt-10 lg:mt-13">Angka-angka ini bukan sekadar data—ini bukti nyata bahwa HGTC terus berkembang dan memberikan dampak positif bagi mahasiswa setiap tahunnya.</p>
                 </div>
             </div>
         </div>
@@ -328,31 +331,36 @@
     <!-- END STATISTIK PERJALANAN SECTION -->
 
     <!-- START PERUSAHAAN -->
-    <section class="sm:px-16 lg:px-18 lg:pb-80 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500">
+    <section class="sm:px-16 lg:px-18 pb-35 sm:pb-60 md:pb-70 xl:pb-75 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500 selection:bg-purple selection:text-white">
         <div class="flex items-center justify-center">
-            <div class="w-full font-jakarta flex flex-col gap-25">
-                <h1 class="text-6xl font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent text-center leading-14 glow-purple pb-2.5">Perusahaan Yang Sudah <span class="block"> Kami Kunjungi</span></h1>
-                <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mx-auto lg:w-8/12">
+            <div class="w-full font-jakarta flex flex-col gap-10 sm:gap-12 md:gap-15 lg:gap-20 xl:gap-25">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent text-center leading-8 sm:leading-10 lg:leading-13 lg:pb-3 glow-purple pb-2.5">Perusahaan Yang Sudah <span class="block"> Kami Kunjungi</span></h1>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-5 sm:gap-7 md:gap-10 mx-auto w-[65%] sm:w-[70%] md:w-[80%] xl:w-8/12 z-1">
                     <!-- Card 1: Agate -->
-                    <div class="bg-white rounded-3xl lg:max-w-full font-jakarta py-5 px-4 hover:scale-105 transition-all duration-500 inner-purple-shadow">
-                        <a href="https://agate.id/" target="_blank">
-                            <div class="flex justify-center items-center mx-auto">
-                                <img src="assets/images/logo/agate.svg" alt="img" />
+                    <a href="https://agate.id/" target="_blank" class="card">
+                        <div class="content-card">
+                            <div class="back-2 inner-purple-shadow">
+                                <div class="back-content">
+                                    <img src="assets/images/logo/agate.svg" alt="img" class="max-w-[85%] sm:max-w-[80%] xl:max-w-full h-auto object-fit" />
+                                </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+
                     <!-- Card 2: BRIN -->
-                    <div class="bg-white rounded-3xl lg:max-w-full font-jakarta py-5 px-4 hover:scale-105 transition-all duration-500 inner-purple-shadow z-1">
-                        <a href="https://brin.go.id/orei/posts/kabar/peneliti-brin-teknologi-iot-kunci-untuk-mendukung-transformasi-digital" target="_blank">
-                            <div class="card-content flex justify-center items-center mx-auto">
-                                <img src="assets/images/logo/brin.svg" alt="img" />
+                    <a href="https://brin.go.id/orei/posts/kabar/peneliti-brin-teknologi-iot-kunci-untuk-mendukung-transformasi-digital" target="_blank" class="card">
+                        <div class="content-card">
+                            <div class="back inner-purple-shadow">
+                                <div class="back-content">
+                                    <img src="assets/images/logo/brin.svg" alt="img" class="max-w-[80%] sm:max-w-[80%] xl:max-w-full h-auto object-fit" />
+                                </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute bottom-14 right-0" />
+        <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute bottom-8 md:bottom-14 right-0 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] transition-all duration-500" />
     </section>
     <!-- END PERUSAHAAN -->
 
@@ -386,27 +394,530 @@
     <!-- END LIVE SECTION -->
 
     <!-- START DOKUMENTASI -->
-    <section class="sm:px-16 lg:px-18 lg:py-56 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500">
+    <section class="sm:px-16 px-7 lg:px-18 py-20 lg:py-56 bg-linear-90/oklch from-darkPurple to-purpleAbout relative transition-all duration-500 selection:bg-purple selection:text-white">
         <div class="flex items-center justify-center">
             <div class="w-full font-jakarta">
-                <h1 class="text-8xl font-bold bg-linear-180/oklch from-blueLogo to-purpleLogo bg-clip-text text-transparent text-center pb-2.5 glow-purple">Dokumentasi</h1>
-                <div class="w-2/4 mx-auto mt-5">
-                    <p class="font-light leading-7 text-2xl text-white text-center">Dokumentasi ini menjadi bukti nyata partisipasi aktif mahasiswa dalam kegiatan kunjungan industri.</p>
+                <div class="mb-10 relative">
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold bg-linear-180/oklch from-blueLogo to-purpleLogo bg-clip-text text-transparent text-center glow-purple">Dokumentasi</h1>
+                    <div class="w-full lg:w-2/4 mx-auto mt-5 lg:mt-7">
+                        <p class="font-light leading-5 xl:leading-7 text-sm sm:text-base md:text-xl xl:text-2xl text-white text-center">Dokumentasi ini menjadi bukti nyata partisipasi aktif mahasiswa dalam kegiatan kunjungan industri.</p>
+                    </div>
+                    <span class="md:hidden absolute -bottom-8 text-center left-0 right-0 text-white text-base">Klik gambar untuk selengkapnya</span>
                 </div>
                 <div class="slider">
-                    <div class="slide-track">
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
-                    <div class="slide"> <!<img src="" alt=""></div>
+                    <div class='slide-track'>
+                        <!-- 18 SLIDES -->
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-1.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-2.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-3.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-4.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-5.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-6.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-7.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-8.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-9.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-10.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-11.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-12.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-13.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-14.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-15.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-16.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-17.jpg" alt="dokumentasi" class="image" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-18.jpg" alt="dokumentasi" class="image" />
+                        </div>
+
+                        <!-- 18 SLIDES SAMA DOUBLE -->
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-1.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-2.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-3.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-4.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-5.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-6.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-7.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-8.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-9.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-10.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-11.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-12.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-13.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-14.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-15.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-16.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-17.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/agate-18.jpg" alt="dokumentasi" class="image-2" />
+                        </div>
                     </div>
+                </div>
+                <div class="slider">
+                    <div class='slide-track-2'>
+                        <!-- 18 SLIDES -->
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-1.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-2.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-3.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-4.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-5.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-6.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-7.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-8.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-9.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-10.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-11.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-12.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-13.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-14.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-15.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-16.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-17.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-18.jpg" alt="dokumentasi" class="image-3" />
+                        </div>
+
+                        <!-- 18 SLIDES SAMA DOUBLE -->
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-1.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-2.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-3.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-4.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-5.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-6.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-7.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-8.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-9.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-10.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-11.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-12.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-13.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-14.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-15.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[352px] md:w-[462px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-16.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[208px] md:w-[278px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-17.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                        <div class="slide h-[200px] md:h-[270px] w-[278px] md:w-[348px]">
+                            <div class="overlay">
+                                Klik untuk selengkapnya
+                            </div>
+                            <img src="assets/images/documentation/hgtc-18.jpg" alt="dokumentasi" class="image-4" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- popup -->
+                <div class="popup z-[999]">
+                    <!-- top bar -->
+                    <div class="top-bar">
+                        <p class="image-name">img1.png</p>
+                        <span class="close-btn">
+                            <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
+                        </span>
+                    </div>
+                    <!-- arrows -->
+                    <button class="arrow-btn left-arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <button class="arrow-btn right-arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <!-- image -->
+                    <img src="assets/images/documentation/agate-1.jpg" class="large-image" alt="">
+                    <!-- image-index -->
+                    <h1 class="index">01</h1>
+                </div>
+                <!-- popup-2 -->
+                <div class="popup-2 z-[999]">
+                    <!-- top bar -->
+                    <div class="top-bar-2">
+                        <p class="image-name-2">img1.png</p>
+                        <span class="close-btn-2">
+                            <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
+                        </span>
+                    </div>
+                    <!-- arrows -->
+                    <button class="arrow-btn-2 left-arrow-2"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <button class="arrow-btn-2 right-arrow-2"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <!-- image -->
+                    <img src="assets/images/documentation/agate-1.jpg" class="large-image-2" alt="">
+                    <!-- image-index -->
+                    <h1 class="index-2">01</h1>
+                </div>
+                <!-- popup-3 -->
+                <div class="popup-3 z-[999]">
+                    <!-- top bar -->
+                    <div class="top-bar-3">
+                        <p class="image-name-3">img1.png</p>
+                        <span class="close-btn-3">
+                            <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
+                        </span>
+                    </div>
+                    <!-- arrows -->
+                    <button class="arrow-btn-3 left-arrow-3"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <button class="arrow-btn-3 right-arrow-3"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <!-- image -->
+                    <img src="assets/images/documentation/hgtc-1.jpg" class="large-image-3" alt="">
+                    <!-- image-index -->
+                    <h1 class="index-3">01</h1>
+                </div>
+                <!-- popup-4 -->
+                <div class="popup-4 z-[999]">
+                    <!-- top bar -->
+                    <div class="top-bar-4">
+                        <p class="image-name-4">img1.png</p>
+                        <span class="close-btn-4">
+                            <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
+                        </span>
+                    </div>
+                    <!-- arrows -->
+                    <button class="arrow-btn-4 left-arrow-4"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <button class="arrow-btn-4 right-arrow-4"><img src="assets/images/icons/arrow.png" alt=""></button>
+                    <!-- image -->
+                    <img src="assets/images/documentation/hgtc-1.jpg" class="large-image-4" alt="">
+                    <!-- image-index -->
+                    <h1 class="index-4">01</h1>
                 </div>
             </div>
         </div>
@@ -443,126 +954,420 @@
     <!-- END LIVE SECTION -->
 
     <!-- START FAQ SECTION -->
-    <section id="about" class="sm:px-16 lg:px-18 lg:py-70 bg-[#100521] relative transition-all duration-500">
-        <img src="assets/images/objects/blob-left.svg" alt="img" class="absolute top-10 left-0" />
+    <section class="px-6 sm:px-16 lg:px-18 py-35 lg:py-56 xl:py-70 bg-[#100521] relative transition-all duration-500 selection:bg-purple selection:text-white">
+        <img src="assets/images/objects/blob-left.svg" alt="img" class="absolute top-10 left-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[430px]" />
         <div class="font-jakarta text-center">
-            <h1 class="text-[64px] font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent leading-20 glow-purple">Frequently Asked Question</h1>
-            <p class="text-xl text-white text-center mt-6">Masih bingung tentang HGTC?<br />Cek pertanyaan yang paling sering muncul berikut</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-[64px] font-bold bg-linear-180/oklch from-blueLogo to-purpleTextLogo bg-clip-text text-transparent leading-10 md:leading-15 lg:leading-19 xl:leading-20 glow-purple">Frequently Asked Question</h1>
+            <p class="leading-5 xl:leading-7 text-sm sm:text-base md:text-xl xl:text-2xl text-white text-center mt-6">Masih bingung tentang HGTC?<br />Cek pertanyaan yang paling sering muncul berikut</p>
         </div>
-        <div class="faq-grid w-full max-w-[1200px] mx-auto mt-10 grid grid-cols-2 gap-5">
-          <ul class="container-accordion left-column">
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="first"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="first"
-                >Apa itu semantik<i class="fa-solid fa-circle-arrow-down"></i
-              ></label>
-              <div class="content">
-                <p>
-                  Semantik adalah seleksi mahasiswa nge top informatika yang
-                  dimana semantik ini merupakan wadah bagi mahasiswa
-                  informatika.
-                </p>
-              </div>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="second"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="second"
-                >Kapan pendaftaran nya?<i
-                  class="fa-solid fa-circle-arrow-down"
-                ></i
-              ></label>
-              <div class="content">
-                <p>
-                  Untuk waktu pendaftaran bisa di lihat di section timeline di
-                  atas.
-                </p>
-              </div>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="third"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="third"
-                >Apakah bisa mengikuti 2 lomba?<i
-                  class="fa-solid fa-circle-arrow-down"
-                ></i
-              ></label>
-              <div class="content">
-                <p>
-                  Bisa asalkan waktu perlombaannya tidak barengan atau bentrok.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <ul class="container-accordion right-column">
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="fourth"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="fourth"
-                >Ada berapa macam perlombaan?<i
-                  class="fa-solid fa-circle-arrow-down"
-                ></i
-              ></label>
-              <div class="content">
-                <p>
-                  Ada 5 yakni, idea project, graphich design, competitive programming, typing competition, dan video creative.
-                </p>
-              </div>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="fifth"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="fifth"
-                >Siapa yang bisa mengikuti lomba ini?<i
-                  class="fa-solid fa-circle-arrow-down"
-                ></i
-              ></label>
-              <div class="content">
-                <p>Mahasiswa aktif informatika.</p>
-              </div>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="accordion"
-                id="sixth"
-                class="accordion-toggle"
-              />
-              <label id="faq" for="sixth"
-                >Apakah ada biaya pendaftarannya?<i
-                  class="fa-solid fa-circle-arrow-down"
-                ></i
-              ></label>
-              <div class="content">
-                <p>Perlombaan ini tidak di pungut biaya apapun.</p>
-              </div>
-            </li>
-          </ul>
+        <div class="w-full sm:w-[80%] mx-auto mt-10 grid grid-cols-1 lg:grid-cols-2 gap-3">
+            <ul class="container-accordion left-column flex flex-col gap-3 w-full relative z-2">
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="first"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="first" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Apakah semua mahasiswa boleh ikut?<i class="fa-solid fa-circle-arrow-down"></i
+                    ></label>
+                    <div class="content flex items-center">
+                        <p class="text-black max-w-[580px] text-left">
+                        Kegiatan ini hanya terbuka untuk  mahasiswa aktif Informatika Fakultas Ilmu Komputer.
+                        </p>
+                    </div>
+                </li>
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="second"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="second" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Apakah biaya bisa dicicil atau ada subsidi?<i
+                        class="fa-solid fa-circle-arrow-down"
+                        ></i
+                    ></label>
+                    <div class="content">
+                        <p class="text-black max-w-[580px] text-left text-base">
+                        Saat ini belum tersedia skema cicilan maupun subsidi. Namun, kami akan mengupayakan bantuan dana jika memungkinkan dari pihak jurusan atau sponsor.
+                        </p>
+                    </div>
+                </li>
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="third"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="third" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Bagaimana dress code saat kunjungan?<i
+                        class="fa-solid fa-circle-arrow-down"
+                        ></i
+                    ></label>
+                    <div class="content">
+                        <p class="text-black max-w-[580px] text-left text-base">
+                        Peserta wajib mengenakan pakaian rapi dan sopan, dengan almamater dan sepatu tertutup.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="container-accordion right-column flex flex-col gap-3 w-full relative z-2">
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="fourth"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="fourth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Berapa kuota peserta yang tersedia?<i
+                        class="fa-solid fa-circle-arrow-down"
+                        ></i
+                    ></label>
+                    <div class="content">
+                        <p class="text-black max-w-[580px] text-left text-base">
+                        Tergantung, Tahun ini (2025) hanya membuka untuk 60 orang. Namun, tidak menutup kemungkinan akan bertambah jadi siapa cepat, dia dapat.
+                        </p>
+                    </div>
+                </li>
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="fifth"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="fifth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Berapa biaya pendaftaran untuk mengikuti HGTC?<i
+                        class="fa-solid fa-circle-arrow-down"
+                        ></i
+                    ></label>
+                    <div class="content">
+                        <p class="text-black max-w-[580px] text-left text-base">Biaya pendaftarannya menyesuaikan untuk tahun ini (2025) di harga Rp64.000, yang sudah mencakup transportasi, konsumsi, dan dokumentasi kegiatan.</p>
+                    </div>
+                </li>
+                <li class="list-none w-auto p-2 lg:p-2.5 bg-white rounded-2xl">
+                    <input
+                        type="checkbox"
+                        name="accordion"
+                        id="sixth"
+                        class="accordion-toggle"
+                    />
+                    <label id="faq" for="sixth" class="flex items-center font-medium justify-between cursor-pointer md:text-base p-[5px] text-black"
+                        >Apa saja fasilitas yang didapatkan peserta?<i
+                        class="fa-solid fa-circle-arrow-down"
+                        ></i
+                    ></label>
+                    <div class="content">
+                        <p class="text-black max-w-[580px] text-left text-base">Selama mengikuti HGTC, peserta difasilitasi transportasi, konsumsi, dokumentasi, serta pengalaman langsung berdiskusi dengan para profesional industri.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute -bottom-8 right-0 z-1" />
+        <img src="assets/images/objects/blob-right.svg" alt="img" class="absolute bottom-10 xl:-bottom-8 right-0 z-1 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[600px]" />
     </section>
     <!-- END FAQ SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <footer class="bg-linear-180/oklch from-blackFooter to-purpleFooter pt-9 lg:pt-12 pb-8 lg:pb-11 px-6 sm:px-16 md:px-16 lg:px-28 selection:bg-purple-900 selection:text-white transition-all duration-500 font-jakarta overflow-hidden">
+        <div class="lg:container transition-all duration-500">
+            <div class="lg:flex lg:justify-between transition-all duration-500">
+                <div class="w-full lg:w-5/12 mb-8 text-slate-300 font-medium flex items-start justify-center lg:justify-normal transition-all duration-500 z-2">
+                    <div>
+                        <a href="#home" class="font-semibold text-2xl md:text-3xl lg:text-4xl transition-all duration-500 flex items-center gap-3 mb-5 md:gap-5 flex-col justify-center">
+                            <span class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[140px] lg:h-[140px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex items-center custom-shadow">
+                                <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[140px] lg:h-[140px]" />
+                            </span>
+                            <span class="bg-gradient-to-r from-blueTextLogo to-purpleTextLogo bg-clip-text text-transparent font-extrabold text-3xl text-logo-shadow inner-text">HGTC</span>
+                        </a>
+                        <div class="flex items-center justify-between mb-5">
+                            <!-- Instagram -->
+                            <a
+                            href="https://www.instagram.com/himtika_unsika?igsh=MTRzbWU4Zm5tYXFrZg=="
+                            target="_blank"
+                            class="w-10 h-10 mr-3 rounded-full flex justify-center items-center bg-white/20 text-white hover:bg-linear-180/oklch hover:from-blueLogo hover:to-purpleLogo hover:text-white hover:border-none"
+                            >
+                                <svg
+                                    role="img"
+                                    width="22"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Instagram HIMTIKA</title>
+                                    <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Twitter/X -->
+                            <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            class="w-10 h-10 mr-3 rounded-full flex justify-center items-center bg-white/20 text-white hover:bg-linear-180/oklch hover:from-blueLogo hover:to-purpleLogo hover:text-white hover:border-none"
+                            >
+                                <svg 
+                                    role="img"
+                                    width="20"
+                                    class="fill-current" 
+                                    viewBox="0 0 24 24"  
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                >
+                                    <title>X HIMTIKA</title>
+                                    <path d="M18.3265 1.90405H21.7L14.33 10.3276L23 21.7901H16.2115L10.894 14.8381L4.81 21.7901H1.4345L9.3175 12.7801L1 1.90405H7.961L12.7675 8.25855L18.3265 1.90405ZM17.1425 19.7701H19.0115L6.9455 3.81705H4.9395L17.1425 19.7701Z" />
+                                </svg>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a
+                            href="https://www.linkedin.com/company/himtika/"
+                            target="_blank"
+                            class="w-10 h-10 mr-3 rounded-full flex justify-center items-center bg-white/20 text-white hover:bg-linear-180/oklch hover:from-blueLogo hover:to-purpleLogo hover:text-white hover:border-none"
+                            >
+                                <svg 
+                                    role="img"
+                                    width="20" 
+                                    class="fill-current"
+                                    viewBox="0 0 24 24" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_747_41" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                    <path d="M24 0V24H0V0H24Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_747_41)">
+                                    <path d="M22.2235 0H1.772C0.792 0 0 0.7735 0 1.73V22.265C0 23.222 0.792 24 1.772 24H22.2235C23.2035 24 24 23.222 24 22.27V1.73C24 0.773 23.203 0 22.2235 0ZM7.12 20.4515H3.558V8.9955H7.1205L7.12 20.4515ZM5.339 7.435C5.06781 7.43546 4.79918 7.38246 4.54849 7.27903C4.29779 7.17559 4.06995 7.02376 3.87798 6.83221C3.686 6.64065 3.53367 6.41314 3.4297 6.16267C3.32572 5.9122 3.27213 5.64369 3.272 5.3725C3.27213 5.10131 3.32572 4.8328 3.4297 4.58233C3.53367 4.33186 3.686 4.10435 3.87798 3.91279C4.06995 3.72124 4.29779 3.56941 4.54849 3.46597C4.79918 3.36254 5.06781 3.30954 5.339 3.31C5.88601 3.31 6.41061 3.5273 6.79741 3.91409C7.1842 4.30089 7.4015 4.82549 7.4015 5.3725C7.4015 5.91951 7.1842 6.44411 6.79741 6.83091C6.41061 7.2177 5.88601 7.435 5.339 7.435ZM20.4515 20.452H16.894V14.883C16.894 13.5565 16.8705 11.8455 15.042 11.8455C13.1905 11.8455 12.9095 13.2935 12.9095 14.789V20.4515H9.356V8.9955H12.769V10.5605H12.8155C13.289 9.6605 14.4515 8.7095 16.181 8.7095C19.786 8.7095 20.4515 11.0815 20.4515 14.1655V20.452Z" />
+                                    </g>
+                                </svg>
+                            </a>
+
+                            <!-- Youtube -->
+                            <a
+                            href="https://www.youtube.com/@himtikaofficial4428"
+                            target="_blank"
+                            class="w-10 h-10 mr-3 rounded-full flex justify-center items-center bg-white/20 text-white hover:bg-linear-180/oklch hover:from-blueLogo hover:to-purpleLogo hover:text-white hover:border-none"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>YouTube</title>
+                                    <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Tiktok -->
+                            <a
+                            href="https://www.tiktok.com/@himtika_unsika"
+                            target="_blank"
+                            class="w-10 h-10 rounded-full flex justify-center items-center bg-white/20 text-white hover:bg-linear-180/oklch hover:from-blueLogo hover:to-purpleLogo hover:text-white hover:border-none"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>TikTok</title>
+                                    <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-3 grid-cols-2 w-full lg:w-7/12 transition-all duration-500">
+                    <!-- kolom 1  -->
+                    <div class="w-full mb-8 text-white flex justify-center sm:justify-start lg:justify-start transition-all duration-500 z-2">
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-6">
+                            Media
+                            </h3>
+                            <ul class="text-base">
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Berita
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Artikel HIMTIKA
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Beasiswa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Kegiatan Mahasiswa
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- kolom 2 -->
+                    <div class="w-full mb-8 font-[Plus Jakarta Sans] text-white flex justify-center transition-all duration-500 z-2">
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-6">Event</h3>
+                            <ul class="text-base">
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/open-project/"
+                                        target="_blank"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Open Project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/hgtc/"
+                                        target="_blank"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >HGTC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/semantik_9/"
+                                        target="_blank"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >SEMANTIK 9.0
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/studyclub-2024/"
+                                        target="_blank"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Study Club
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/pekan_it/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >PEKAN IT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/lkmmpd/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >LKMM-PD
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/diesnatalis/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Diesnatalis
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/it-bootcamp/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >IT Bootcamp
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- kolom 3 -->
+                    <div class="w-full mb-8 font-[Plus Jakarta Sans] text-white flex justify-center sm:justify-end lg:justify-end transition-all duration-500 z-2">
+                        <div>
+                            <h3 class="font-bold text-white text-xl mb-6">
+                            Aplikasi Publik
+                            </h3>
+                            <ul class="text-base">
+                                <li>
+                                    <a
+                                        href="https://himtalks.vercel.app/himtalks"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >HIMTALKS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/hikode/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Hikode
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/kalendar/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Kalender
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/corporation/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Corporation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#game"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Studio IT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://himtika.cs.unsika.ac.id/dosen/"
+                                        class="inline-block text-base mb-4 hover:scale-125 hover:text-purpleTextLogo antialiased transform will-change-transform origin-left transition-all duration-500"
+                                        >Profil Tenaga Pendidik
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full pt-6 lg:pt-8 border-t-2 border-white transition-all duration-500">
+                <p class="font-medium text-base text-white text-center">
+                    Licensed, Registered, and Authorized by 
+                    <span class="flex gap-2 mt-1 items-center justify-center">
+                        <img
+                            src="assets/images/logo/HIMTIKA.png"
+                            width="40"
+                            height="40"
+                            alt="HIMTIKA"
+                        />  
+                        HIMTIKA 
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
 
     <!-- JawaScript -->
     <script src="assets/js/script.js"></script>

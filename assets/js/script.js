@@ -26,7 +26,7 @@ window.addEventListener('scroll', function(){
     currentScale += (targetScale - currentScale) * 0.1;
     let opacity = Math.max(1 - value / 50, 0); // hilang sepenuhnya setelah scroll 300px
     // contoh batas maksimum pergeseran top heroText = 200px
-    let maxShift = 500;
+    let maxShift = window.innerWidth < 1280 ? 300 : 450;
     // Hitung posisi top heroText dengan batas
     let newTopHeroText = Math.min(value * 0.7, maxShift);
     let newTopLeftStars = Math.min(leftStarsTop + value * 0.7, maxShift);
@@ -47,6 +47,36 @@ window.addEventListener('scroll', function(){
     buttonGST.style.top = -value * 1 + 'px';
 })
 // Paralax Effect
+
+// Mencegah Inspect Element dan View Source
+document.addEventListener("keydown", function (event) {
+    if (
+        (event.ctrlKey &&
+        (event.key === "u" ||
+            event.key === "i" ||
+            event.key === "j" ||
+            event.key === "s")) ||
+        (event.ctrlKey &&
+        event.shiftKey &&
+        (event.key === "I" || event.key === "J" || event.key === "C")) ||
+        event.key === "F12"
+    ) {
+        event.preventDefault();
+        console.log("Inspect Element telah dinonaktifkan!"); // Debugging
+    }
+});
+// Mencegah Klik Kanan
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+// Mencegah Drag & Drop pada Semua Gambar
+document.addEventListener("dragstart", function (event) {
+    event.preventDefault();
+});
+// Mencegah Klik Kanan pada Gambar Secara Spesifik
+document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("contextmenu", (event) => event.preventDefault());
+});
 
 // Navbar Fixed
 window.onscroll = function() {
@@ -70,17 +100,78 @@ const navMenu = document.querySelector('#nav-menu');
 
 hamburger.addEventListener('click' , function() {
     // hamburger.classList.toggle('hamburger-active');
-    document.body.classList.toggle('nav-open');
-    navMenu.classList.toggle('hidden');
+    // navMenu.classList.toggle('hidden');
+    const isMobile = window.innerWidth < 1024; // Tailwind 'lg' = 1024px
+
+    if (navMenu.classList.contains("hidden")){
+        document.body.classList.toggle('nav-open');
+        navMenu.classList.remove("hidden");
+        navMenu.style.transform = "translateY(-10px)";
+        navMenu.style.opacity = "0";
+
+        setTimeout(() => {
+            navMenu.style.transform = "translateY(0)";
+            navMenu.style.opacity = "1";
+        }, 10);
+    } else {
+        if (isMobile) {
+            navMenu.style.transform = "translateY(-10px)";
+            navMenu.style.opacity = "0";
+            document.body.classList.remove('nav-open');
+            setTimeout(() => {
+                navMenu.classList.add("hidden");
+            }, 300);
+        }
+    }
+});
+
+function updateNavMenuDisplay() {
+    const isDesktop = window.innerWidth >= 1024;
+
+    if (isDesktop) {
+        navMenu.classList.remove("hidden");
+        navMenu.style.opacity = "1";
+        navMenu.style.transform = "translateY(0)";
+    } else {
+        // Hanya tambahkan hidden jika menu belum dibuka (misalnya user belum klik hamburger)
+        if (!document.body.classList.contains('nav-open')) {
+            navMenu.classList.add("hidden");
+        }
+    }
+}
+
+// Jalankan saat halaman pertama kali dimuat
+updateNavMenuDisplay();
+
+// Jalankan juga saat ukuran layar berubah
+window.addEventListener('resize', updateNavMenuDisplay);
+
+//  FAQ SECTION - ACCORDION
+document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion-toggle");
+    accordions.forEach((accordion) => {
+        accordion.addEventListener("change", function () {
+        // Menutup accordion lainnya saat yang ini dibuka
+        accordions.forEach((item) => {
+            if (item !== this) item.checked = false;
+        });
+        });
+    });
 });
 
 // Klik di luar hamburger
-window.addEventListener('click' , function(e) {
-    if(e.target != hamburger && e.target != navMenu) {
-        document.body.classList.remove('nav-open');
-        navMenu.classList.add('hidden');
-    }
-});
+// window.addEventListener('click' , function(e) {
+//     if(e.target != hamburger && e.target != navMenu) {
+//         // document.body.classList.remove('nav-open');
+//         // navMenu.classList.add('hidden');
+//         navMenu.style.transform = "translateY(-10px)";
+//         navMenu.style.opacity = "0";
+//         document.body.classList.remove('nav-open');
+//         setTimeout(() => {
+//             navMenu.classList.add("hidden");
+//         }, 300);
+//     }
+// });
 
 // HERO SECTION
 document.addEventListener("DOMContentLoaded", function () {
@@ -153,16 +244,194 @@ window.addEventListener("scroll", () => {
 })
 // NUMBER COUNTING ANIMATION
 
-//  FAQ SECTION - ACCORDION
-document.addEventListener("DOMContentLoaded", () => {
-  const accordions = document.querySelectorAll(".accordion-toggle");
+// POP UP DOKUMENTASI
+const images = [...document.querySelectorAll('.image')];
 
-  accordions.forEach((accordion) => {
-    accordion.addEventListener("change", function () {
-      // Menutup accordion lainnya saat yang ini dibuka
-      accordions.forEach((item) => {
-        if (item !== this) item.checked = false;
-      });
-    });
-  });
-});
+// popup
+const popup = document.querySelector('.popup');
+const closeBtn = document.querySelector('.close-btn');
+const imageName = document.querySelector('.image-name');
+const largeImage = document.querySelector('.large-image');
+const imageIndex = document.querySelector('.index');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+
+let index = 0; // will track our current image;
+
+// Popup Image Agate 1
+images.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        updateImage(i);
+        popup.classList.toggle('active');
+    })
+})
+const updateImage = (i) => {
+    let path = `assets/images/documentation/agate-${i+1}.jpg`;
+    largeImage.src = path;
+    imageName.innerHTML = path;
+    imageIndex.innerHTML = `0${i+1}`;
+    index = i;
+}
+
+closeBtn.addEventListener('click', () => {
+    popup.classList.toggle('active');
+})
+
+leftArrow.addEventListener('click', () => {
+    if(index > 0){
+        updateImage(index - 1);
+    } else {
+        // balik ke akhir
+        updateImage(images.length - 1);
+    }
+})
+
+rightArrow.addEventListener('click', () => {
+    if(index < images.length - 1){
+        updateImage(index + 1);
+    } else {
+        // balik ke awal
+        updateImage(0);
+    }
+})
+
+const images2 = [...document.querySelectorAll('.image-2')];
+const popup2 = document.querySelector('.popup-2');
+const closeBtn2 = document.querySelector('.close-btn-2');
+const imageName2 = document.querySelector('.image-name-2');
+const largeImage2 = document.querySelector('.large-image-2');
+const imageIndex2 = document.querySelector('.index-2');
+const leftArrow2 = document.querySelector('.left-arrow-2');
+const rightArrow2 = document.querySelector('.right-arrow-2');
+
+let index2 = 0; // will track our current image;
+
+// Popup Image Agate 2
+images2.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        updateImage2(i);
+        popup2.classList.toggle('active-2');
+    })
+})
+const updateImage2 = (i) => {
+    let path = `assets/images/documentation/agate-${i+1}.jpg`;
+    largeImage2.src = path;
+    imageName2.innerHTML = path;
+    imageIndex2.innerHTML = `0${i+1}`;
+    index2 = i;
+}
+closeBtn2.addEventListener('click', () => {
+    popup2.classList.toggle('active-2');
+})
+
+leftArrow2.addEventListener('click', () => {
+    if(index2 > 0){
+        updateImage2(index2 - 1);
+    } else {
+        // balik ke akhir
+        updateImage2(images2.length - 1);
+    }
+})
+
+rightArrow2.addEventListener('click', () => {
+    if(index2 < images2.length - 1){
+        updateImage2(index2 + 1);
+    } else {
+        // balik ke awal
+        updateImage2(0);
+    }
+})
+
+const images3 = [...document.querySelectorAll('.image-3')];
+const popup3 = document.querySelector('.popup-3');
+const closeBtn3 = document.querySelector('.close-btn-3');
+const imageName3 = document.querySelector('.image-name-3');
+const largeImage3 = document.querySelector('.large-image-3');
+const imageIndex3 = document.querySelector('.index-3');
+const leftArrow3 = document.querySelector('.left-arrow-3');
+const rightArrow3 = document.querySelector('.right-arrow-3');
+
+let index3 = 0; // will track our current image;
+
+// Popup Image Agate 2
+images3.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        updateImage3(i);
+        popup3.classList.toggle('active-3');
+    })
+})
+const updateImage3 = (i) => {
+    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
+    largeImage3.src = path;
+    imageName3.innerHTML = path;
+    imageIndex3.innerHTML = `0${i+1}`;
+    index3 = i;
+}
+closeBtn3.addEventListener('click', () => {
+    popup3.classList.toggle('active-3');
+})
+
+leftArrow3.addEventListener('click', () => {
+    if(index3 > 0){
+        updateImage3(index3 - 1);
+    } else {
+        // balik ke akhir
+        updateImage3(images3.length - 1);
+    }
+})
+
+rightArrow3.addEventListener('click', () => {
+    if(index3 < images3.length - 1){
+        updateImage3(index3 + 1);
+    } else {
+        // balik ke awal
+        updateImage3(0);
+    }
+})
+
+const images4 = [...document.querySelectorAll('.image-4')];
+const popup4 = document.querySelector('.popup-4');
+const closeBtn4 = document.querySelector('.close-btn-4');
+const imageName4 = document.querySelector('.image-name-4');
+const largeImage4 = document.querySelector('.large-image-4');
+const imageIndex4 = document.querySelector('.index-4');
+const leftArrow4 = document.querySelector('.left-arrow-4');
+const rightArrow4 = document.querySelector('.right-arrow-4');
+
+let index4 = 0; // will track our current image;
+
+// Popup Image Agate 2
+images4.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        updateImage4(i);
+        popup4.classList.toggle('active-4');
+    })
+})
+const updateImage4 = (i) => {
+    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
+    largeImage4.src = path;
+    imageName4.innerHTML = path;
+    imageIndex4.innerHTML = `0${i+1}`;
+    index4 = i;
+}
+closeBtn4.addEventListener('click', () => {
+    popup4.classList.toggle('active-4');
+})
+
+leftArrow4.addEventListener('click', () => {
+    if(index4 > 0){
+        updateImage4(index4 - 1);
+    } else {
+        // balik ke akhir
+        updateImage4(images4.length - 1);
+    }
+})
+
+rightArrow4.addEventListener('click', () => {
+    if(index4 < images4.length - 1){
+        updateImage4(index4 + 1);
+    } else {
+        // balik ke awal
+        updateImage4(0);
+    }
+})
