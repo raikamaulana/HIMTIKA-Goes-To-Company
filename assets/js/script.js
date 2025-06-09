@@ -1,3 +1,18 @@
+// Tambahkan fungsi Loader
+window.addEventListener("load", function () {
+    const loaderWrapper = document.getElementById("loader-wrapper");
+
+    if (loaderWrapper) {
+        setTimeout(() => {
+        loaderWrapper.classList.add("hidden"); // Mulai transisi opacity 0.5s
+        }, 1500); // Loader tetap tampil minimal 1.5 detik agar animasi terlihat
+
+        setTimeout(() => {
+        loaderWrapper.style.display = "none"; // Sembunyikan setelah transisi selesai
+        }, 2000); // Sesuai dengan durasi transition CSS + jeda tampilan
+    }
+});
+
 // Paralax Effect
 let glowCloud = document.getElementById("glow-left-cloud");
 let leftCloud = document.getElementById("left-cloud");
