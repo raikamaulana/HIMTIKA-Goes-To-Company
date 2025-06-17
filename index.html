@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- START PRELOADER -->
-    <div id="loader-wrapper" class="fixed top-0 bottom-0 w-full h-full bg-white flex justify-center items-center z-9999 visible transition-all duration-500 font-jakarta bg-linear-180/oklch from-[#1C1E32] via-[#395B99] to-[#2D1D70]">
+    <div id="loader-wrapper" class="fixed top-0 bottom-0 w-full px-6 h-full bg-white flex justify-center items-center z-9999 visible transition-all duration-500 font-jakarta bg-linear-180/oklch from-[#1C1E32] via-[#395B99] to-[#2D1D70]">
         <span class="absolute w-[100px] h-[100px] sm:w-[180px] sm:h-[180px] md:w-[230px] md:h-[230px] lg:w-[270px] lg:h-[270px] xl:w-[300px] xl:h-[300px] bg-gradient-to-b from-blueLogo to-purpleLogo rounded-full flex items-center custom-shadow opacity-30">
             <img src="assets/images/icons/mirip-react.svg" alt="img" width="59" height="59" class="atom-spin w-full" />
         </span>
@@ -58,6 +58,7 @@
         
     </div>
     <!-- END PRELOADER -->
+
     <!-- START NAVBAR -->
     <nav id="navbar" class="w-full absolute top-0 left-0 px-6 py-4 text-white z-25 transition-all duration-500 sm:px-16 lg:px-18 lg:py-5 font-jakarta bg-linear-90/oklch from-darkPurple/50 to-purple/50 backdrop-blur-lg">
         <div class="flex justify-between items-center selection:bg-white selection:text-purple">
@@ -207,30 +208,59 @@
     <!-- END HERO SECTION -->
 
     <!-- START LIVE SECTION -->
-    <div class="live-hero">
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+    <div class="live-wrapper overflow-hidden bg-[#1c1e32] h-16 flex items-center relative">
+    <!-- Track bergerak -->
+        <div class="live-track flex animate-ticker">
+            <!-- 6+6 items -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <!-- duplikasi untuk infinite scroll -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
         </div>
     </div>
     <!-- END LIVE SECTION -->
@@ -305,30 +335,59 @@
     <!-- END ABOUT  -->
 
     <!-- START LIVE SECTION -->
-    <div class="live-hero">
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+    <div class="live-wrapper overflow-hidden bg-[#1c1e32] h-16 flex items-center relative">
+    <!-- Track bergerak -->
+        <div class="live-track flex animate-ticker">
+            <!-- 6+6 items -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <!-- duplikasi untuk infinite scroll -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
         </div>
     </div>
     <!-- END LIVE SECTION -->
@@ -408,30 +467,59 @@
     <!-- END PERUSAHAAN -->
 
     <!-- START LIVE SECTION -->
-    <div class="live-hero">
-        <div class="live flex items-center px-[70px] shrink-0">
+    <div class="live-wrapper overflow-hidden bg-[#1c1e32] h-16 flex items-center relative">
+    <!-- Track bergerak -->
+        <div class="live-track flex animate-ticker">
+            <!-- 6+6 items -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
+            </div>
+            <!-- duplikasi untuk infinite scroll -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
             <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
             <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
         </div>
     </div>
     <!-- END LIVE SECTION -->
@@ -898,7 +986,7 @@
                 <div class="popup z-[999]">
                     <!-- top bar -->
                     <div class="top-bar">
-                        <p class="image-name">img1.png</p>
+                        <!-- <p class="image-name">img1.png</p> -->
                         <span class="close-btn">
                             <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
                         </span>
@@ -915,7 +1003,7 @@
                 <div class="popup-2 z-[999]">
                     <!-- top bar -->
                     <div class="top-bar-2">
-                        <p class="image-name-2">img1.png</p>
+                        <!-- <p class="image-name-2">img1.png</p> -->
                         <span class="close-btn-2">
                             <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
                         </span>
@@ -932,7 +1020,7 @@
                 <div class="popup-3 z-[999]">
                     <!-- top bar -->
                     <div class="top-bar-3">
-                        <p class="image-name-3">img1.png</p>
+                        <!-- <p class="image-name-3">img1.png</p> -->
                         <span class="close-btn-3">
                             <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
                         </span>
@@ -949,7 +1037,7 @@
                 <div class="popup-4 z-[999]">
                     <!-- top bar -->
                     <div class="top-bar-4">
-                        <p class="image-name-4">img1.png</p>
+                        <!-- <p class="image-name-4">img1.png</p> -->
                         <span class="close-btn-4">
                             <svg viewBox="0 0 56.326 56.326" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="Path_14" data-name="Path 14" d="M477.613,422.087l25.6-25.6a1.5,1.5,0,0,0-2.122-2.121l-25.6,25.6-25.6-25.6a1.5,1.5,0,1,0-2.121,2.121l25.6,25.6-25.6,25.6a1.5,1.5,0,0,0,2.121,2.122l25.6-25.6,25.6,25.6a1.5,1.5,0,0,0,2.122-2.122Z" transform="translate(-447.328 -393.924)" fill="#000000"></path> </g></svg>
                         </span>
@@ -968,30 +1056,59 @@
     <!-- END DOKUMENTASI -->
 
     <!-- START LIVE SECTION -->
-    <div class="live-hero">
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
-        </div>
-        <div class="live flex items-center px-[70px] shrink-0">
-            <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
-            <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+    <div class="live-wrapper overflow-hidden bg-[#1c1e32] h-16 flex items-center relative">
+    <!-- Track bergerak -->
+        <div class="live-track flex animate-ticker">
+            <!-- 6+6 items -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <!-- duplikasi untuk infinite scroll -->
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]" >
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
+            <div class="live flex items-center justify-center shrink-0 w-[240px] px-[20px]">
+                <img src="assets/images/logo/kabinet-sinergis.png" alt="sinergis" />
+                <span class="text-white font-semibold italic text-[16px]">Sinergis</span>
+            </div>
         </div>
     </div>
     <!-- END LIVE SECTION -->

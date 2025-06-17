@@ -467,8 +467,8 @@ img {
   }
 /* Button Get Started */
 
-/* live */
-.live-hero {
+/* LIVE SECTION */
+/* .live-hero {
     width: 100%;
     height: 64px;
     background-color: #1c1e32;
@@ -490,8 +490,21 @@ img {
 .live-hero .live {
     animation: tickerMove 1.5s linear infinite;
     -webkit-animation: tickerMove 1.5s linear infinite;
+} */
+.live-track {
+  width: calc(240px * 12); /* jika ada 12 item */
+  animation: ticker 10s linear infinite;
 }
-/* Live */
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* LIVE SECTION */
 
 /* About */
 .glow-purple {

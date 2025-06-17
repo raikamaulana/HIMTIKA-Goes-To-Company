@@ -265,7 +265,7 @@ const images = [...document.querySelectorAll('.image')];
 // popup
 const popup = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
-const imageName = document.querySelector('.image-name');
+// const imageName = document.querySelector('.image-name');
 const largeImage = document.querySelector('.large-image');
 const imageIndex = document.querySelector('.index');
 const leftArrow = document.querySelector('.left-arrow');
@@ -283,7 +283,7 @@ images.forEach((item, i) => {
 const updateImage = (i) => {
     let path = `assets/images/documentation/agate-${i+1}.jpg`;
     largeImage.src = path;
-    imageName.innerHTML = path;
+    // imageName.innerHTML = path;
     imageIndex.innerHTML = `0${i+1}`;
     index = i;
 }
@@ -313,7 +313,7 @@ rightArrow.addEventListener('click', () => {
 const images2 = [...document.querySelectorAll('.image-2')];
 const popup2 = document.querySelector('.popup-2');
 const closeBtn2 = document.querySelector('.close-btn-2');
-const imageName2 = document.querySelector('.image-name-2');
+// const imageName2 = document.querySelector('.image-name-2');
 const largeImage2 = document.querySelector('.large-image-2');
 const imageIndex2 = document.querySelector('.index-2');
 const leftArrow2 = document.querySelector('.left-arrow-2');
@@ -331,7 +331,7 @@ images2.forEach((item, i) => {
 const updateImage2 = (i) => {
     let path = `assets/images/documentation/agate-${i+1}.jpg`;
     largeImage2.src = path;
-    imageName2.innerHTML = path;
+    // imageName2.innerHTML = path;
     imageIndex2.innerHTML = `0${i+1}`;
     index2 = i;
 }
@@ -360,7 +360,7 @@ rightArrow2.addEventListener('click', () => {
 const images3 = [...document.querySelectorAll('.image-3')];
 const popup3 = document.querySelector('.popup-3');
 const closeBtn3 = document.querySelector('.close-btn-3');
-const imageName3 = document.querySelector('.image-name-3');
+// const imageName3 = document.querySelector('.image-name-3');
 const largeImage3 = document.querySelector('.large-image-3');
 const imageIndex3 = document.querySelector('.index-3');
 const leftArrow3 = document.querySelector('.left-arrow-3');
@@ -378,7 +378,7 @@ images3.forEach((item, i) => {
 const updateImage3 = (i) => {
     let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
     largeImage3.src = path;
-    imageName3.innerHTML = path;
+    // imageName3.innerHTML = path;
     imageIndex3.innerHTML = `0${i+1}`;
     index3 = i;
 }
@@ -407,7 +407,7 @@ rightArrow3.addEventListener('click', () => {
 const images4 = [...document.querySelectorAll('.image-4')];
 const popup4 = document.querySelector('.popup-4');
 const closeBtn4 = document.querySelector('.close-btn-4');
-const imageName4 = document.querySelector('.image-name-4');
+// const imageName4 = document.querySelector('.image-name-4');
 const largeImage4 = document.querySelector('.large-image-4');
 const imageIndex4 = document.querySelector('.index-4');
 const leftArrow4 = document.querySelector('.left-arrow-4');
@@ -425,7 +425,7 @@ images4.forEach((item, i) => {
 const updateImage4 = (i) => {
     let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
     largeImage4.src = path;
-    imageName4.innerHTML = path;
+    // imageName4.innerHTML = path;
     imageIndex4.innerHTML = `0${i+1}`;
     index4 = i;
 }
