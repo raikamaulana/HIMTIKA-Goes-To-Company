@@ -53,21 +53,21 @@ img {
 
 /* Preloader */
 #loader-wrapper {
-    opacity: 1;
-    visibility: visible;
+  @apply visible;
+  opacity: 1;
 }
 
-#loader-wrapper.hidden {
-    opacity: 0;
-    pointer-events: none;
+#loader-wrapper.hidden-wrapper {
+  @apply pointer-events-none;
+  opacity: 0;
 }
 @media (max-width: 768px){
   #loader-wrapper h1 {
-    -webkit-text-stroke: 1px #395B99;
+    -webkit-text-stroke: 10px #592B9A;
   }
 }
 #loader-wrapper h1 {
-  -webkit-text-stroke: 3px #395B99;
+  -webkit-text-stroke: 3px #592B9A;
 }
 .snowflake {
   --small: 3px;
@@ -559,7 +559,7 @@ img {
 .slide-track {
   display: flex;
   /* width: calc((320px + 30px) * 18); */
-  width: calc((((352px * 6) + (208px * 6) + (278px * 6)) * 2) + (30px * 35) );
+  width: calc((((352px * 3) + (208px * 3) + (278px * 3)) * 2) + (30px * 17) );
   /* width: max-content; */
   animation: scroll 40s linear infinite;
   gap: 30px;
@@ -573,7 +573,7 @@ img {
 .slide-track-2 {
     display: flex;
     /* width: calc((320px + 30px) * 18); */
-    width: calc((((352px * 6) + (208px * 6) + (278px * 6)) * 2) + (30px * 35) );
+    width: calc((((352px * 3) + (208px * 3) + (278px * 3)) * 2) + (30px * 17) );
     /* width: max-content; */
     animation: scroll-2 40s linear infinite;
     gap: 30px;
@@ -591,7 +591,7 @@ img {
   .slide-track {
     display: flex;
     /* width: calc((320px + 30px) * 18); */
-    width: calc((((462px * 6) + (278px * 6) + (348px * 6)) * 2) + (30px * 35) );
+    width: calc((((462px * 3) + (278px * 3) + (348px * 3)) * 2) + (30px * 17) );
     /* width: max-content; */
     animation: scroll 40s linear infinite;
     gap: 30px;
@@ -599,7 +599,7 @@ img {
   .slide-track-2 {
     display: flex;
     /* width: calc((320px + 30px) * 18); */
-    width: calc((((462px * 6) + (278px * 6) + (348px * 6)) * 2) + (30px * 35) );
+    width: calc((((462px * 3) + (278px * 3) + (348px * 3)) * 2) + (30px * 17) );
     /* width: max-content; */
     animation: scroll-2 40s linear infinite;
     gap: 30px;
@@ -617,14 +617,14 @@ img {
   } 
   100% {
     /* transform: translateX(calc(-1 * (320px + 30px) * 9)); jika ukuran foto sama semua*/
-    transform: translateX(calc(-1 * (((462px * 6) + (278px * 6) + (348px * 6)) + (30px * 17) )));
+    transform: translateX(calc(-1 * (((462px * 3) + (278px * 3) + (348px * 3)) + (30px * 8) )));
     /* transform: translateX(-50%); */
   }
 }
 
 @keyframes scroll-2 {
   0% {
-    transform: translateX(calc(-1 * (((462px * 6) + (278px * 6) + (348px * 6)) + (30px * 17) )));
+    transform: translateX(calc(-1 * (((462px * 3) + (278px * 3) + (348px * 3)) + (30px * 8) )));
     /* transform: translateX(-50%); */
   } 
   100% {
@@ -936,12 +936,12 @@ input[type="checkbox"] {
 
 /* POPUP DOKUMENTASI */
 
-.popup, .popup-2, .popup-3, .popup-4{
+.popup, .popup-2 {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 80%;
+    width: 95%;
     max-width: 1600px;
     height: 90vh;
     max-height: 800px;
@@ -955,37 +955,27 @@ input[type="checkbox"] {
     opacity: 0;
 }
 
-.popup.active, .popup-2.active-2, .popup-3.active-3, .popup-4.active-4 {
+.popup.active, .popup-2.active-2 {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
 
 .popup.active .close-btn,
 .popup-2.active-2 .close-btn-2,
-.popup-3.active-3 .close-btn-3,
-.popup-4.active-4 .close-btn-4,
 .popup.active .image-name,
 .popup-2.active-2 .image-name-2,
-.popup-3.active-3 .image-name-3,
-.popup-4.active-4 .image-name-4,
 .popup.active .index,
 .popup-2.active-2 .index-2,
-.popup-3.active-3 .index-3,
-.popup-4.active-4 .index-4,
 .popup.active .large-image,
 .popup-2.active-2 .large-image-2,
-.popup-3.active-3 .large-image-3,
-.popup-4.active-4 .large-image-4,
 .popup.active .arrow-btn,
-.popup-2.active-2 .arrow-btn-2,
-.popup-3.active-3 .arrow-btn-3,
-.popup-4.active-4 .arrow-btn-4{
+.popup-2.active-2 .arrow-btn-2 {
     opacity: 1;
     transition: opacity .5s;
     transition-delay: 1s;
 }
 
-.top-bar, .top-bar-2, .top-bar-3, .top-bar-4 {
+.top-bar, .top-bar-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -998,11 +988,11 @@ input[type="checkbox"] {
     font-weight: 300;
 }
 
-.image-name, .image-name-2, .image-name-3, .image-name-4{
+.image-name, .image-name-2 {
     opacity: 0;
 }
 
-.close-btn, .close-btn-2, .close-btn-3, .close-btn-4{
+.close-btn, .close-btn-2 {
     opacity: 0;
     position: absolute;
     top: 15px;
@@ -1014,7 +1004,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.arrow-btn, .arrow-btn-2, .arrow-btn-3, .arrow-btn-4 {
+.arrow-btn, .arrow-btn-2 {
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -1026,20 +1016,20 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.left-arrow, .left-arrow-2, .left-arrow-3, .left-arrow-4 {
+.left-arrow, .left-arrow-2 {
     left: 10px;
 }
 
-.right-arrow, .right-arrow-2, .right-arrow-3, .right-arrow-4 {
+.right-arrow, .right-arrow-2 {
     right: 10px;
     transform: translateY(-50%) rotate(180deg);
 }
 
-.arrow-btn:hover, .arrow-btn-2:hover, .arrow-btn-3:hover, .arrow-btn-4:hover {
+.arrow-btn:hover, .arrow-btn-2:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.index, .index-2, .index-3, .index-4 {
+.index, .index-2 {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -1049,30 +1039,26 @@ input[type="checkbox"] {
     opacity: 0;
 }
 
-.large-image, .large-image-2, .large-image-3, .large-image-4 {
-    margin-top: 5%;
-    width: 80%;
-    height: 80%;
+.large-image, .large-image-2 {
+    /* margin-top: 5%; */
+    width: 90%;
+    height: 90%;
     object-fit: contain;
     opacity: 0;
 }
 
 @media only screen and (max-width: 640px) and (orientation: portrait) {
     .popup.active,
-    .popup-2.active-2,
-    .popup-3.active-3,
-    .popup-4.active-4 {
+    .popup-2.active-2 {
         transform: translate(-50%, -50%) scale(1) rotate(90deg);
-        width: 90vh;
-        height: 80vw;
+        width: 95vh;
+        height: 95vw;
     }
 
     .large-image,
-    .large-image-2,
-    .large-image-3,
-    .large-image-4 {
-        width: 100%;
-        height: 100%;
+    .large-image-2 {
+        width: 90%;
+        height: 90%;
     }
 }
 

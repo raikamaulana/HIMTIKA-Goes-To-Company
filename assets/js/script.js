@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 
     if (loaderWrapper) {
         setTimeout(() => {
-        loaderWrapper.classList.add("hidden"); // Mulai transisi opacity 0.5s
+        loaderWrapper.classList.add("hidden-wrapper"); // Mulai transisi opacity 0.5s
         }, 1500); // Loader tetap tampil minimal 1.5 detik agar animasi terlihat
 
         setTimeout(() => {
@@ -329,7 +329,7 @@ images2.forEach((item, i) => {
     })
 })
 const updateImage2 = (i) => {
-    let path = `assets/images/documentation/agate-${i+1}.jpg`;
+    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
     largeImage2.src = path;
     // imageName2.innerHTML = path;
     imageIndex2.innerHTML = `0${i+1}`;
@@ -354,99 +354,5 @@ rightArrow2.addEventListener('click', () => {
     } else {
         // balik ke awal
         updateImage2(0);
-    }
-})
-
-const images3 = [...document.querySelectorAll('.image-3')];
-const popup3 = document.querySelector('.popup-3');
-const closeBtn3 = document.querySelector('.close-btn-3');
-// const imageName3 = document.querySelector('.image-name-3');
-const largeImage3 = document.querySelector('.large-image-3');
-const imageIndex3 = document.querySelector('.index-3');
-const leftArrow3 = document.querySelector('.left-arrow-3');
-const rightArrow3 = document.querySelector('.right-arrow-3');
-
-let index3 = 0; // will track our current image;
-
-// Popup Image Agate 2
-images3.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        updateImage3(i);
-        popup3.classList.toggle('active-3');
-    })
-})
-const updateImage3 = (i) => {
-    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
-    largeImage3.src = path;
-    // imageName3.innerHTML = path;
-    imageIndex3.innerHTML = `0${i+1}`;
-    index3 = i;
-}
-closeBtn3.addEventListener('click', () => {
-    popup3.classList.toggle('active-3');
-})
-
-leftArrow3.addEventListener('click', () => {
-    if(index3 > 0){
-        updateImage3(index3 - 1);
-    } else {
-        // balik ke akhir
-        updateImage3(images3.length - 1);
-    }
-})
-
-rightArrow3.addEventListener('click', () => {
-    if(index3 < images3.length - 1){
-        updateImage3(index3 + 1);
-    } else {
-        // balik ke awal
-        updateImage3(0);
-    }
-})
-
-const images4 = [...document.querySelectorAll('.image-4')];
-const popup4 = document.querySelector('.popup-4');
-const closeBtn4 = document.querySelector('.close-btn-4');
-// const imageName4 = document.querySelector('.image-name-4');
-const largeImage4 = document.querySelector('.large-image-4');
-const imageIndex4 = document.querySelector('.index-4');
-const leftArrow4 = document.querySelector('.left-arrow-4');
-const rightArrow4 = document.querySelector('.right-arrow-4');
-
-let index4 = 0; // will track our current image;
-
-// Popup Image Agate 2
-images4.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        updateImage4(i);
-        popup4.classList.toggle('active-4');
-    })
-})
-const updateImage4 = (i) => {
-    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
-    largeImage4.src = path;
-    // imageName4.innerHTML = path;
-    imageIndex4.innerHTML = `0${i+1}`;
-    index4 = i;
-}
-closeBtn4.addEventListener('click', () => {
-    popup4.classList.toggle('active-4');
-})
-
-leftArrow4.addEventListener('click', () => {
-    if(index4 > 0){
-        updateImage4(index4 - 1);
-    } else {
-        // balik ke akhir
-        updateImage4(images4.length - 1);
-    }
-})
-
-rightArrow4.addEventListener('click', () => {
-    if(index4 < images4.length - 1){
-        updateImage4(index4 + 1);
-    } else {
-        // balik ke awal
-        updateImage4(0);
     }
 })
