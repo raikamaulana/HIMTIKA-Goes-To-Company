@@ -281,7 +281,7 @@ images.forEach((item, i) => {
     })
 })
 const updateImage = (i) => {
-    let path = `assets/images/documentation/agate-${i+1}.jpg`;
+    let path = `assets/images/documentation/agate-${i+1}.webp`;
     largeImage.src = path;
     // imageName.innerHTML = path;
     imageIndex.innerHTML = `0${i+1}`;
@@ -329,7 +329,7 @@ images2.forEach((item, i) => {
     })
 })
 const updateImage2 = (i) => {
-    let path = `assets/images/documentation/hgtc-${i+1}.jpg`;
+    let path = `assets/images/documentation/hgtc-${i+1}.webp`;
     largeImage2.src = path;
     // imageName2.innerHTML = path;
     imageIndex2.innerHTML = `0${i+1}`;
